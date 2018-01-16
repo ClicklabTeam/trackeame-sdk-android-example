@@ -1,0 +1,4 @@
+include ':app'
+
+include ':trackeame'
+project(':trackeame').projectDir = new File(settingsDir, '../trackeame-sdk-android/android')

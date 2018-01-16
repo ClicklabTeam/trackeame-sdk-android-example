@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="person@domain.com" />
+
+    <Button
+        android:id="@+id/changeMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Email" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Country" />
+
+    <Button
+        android:id="@+id/buttonItaly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Country Italy" />
+
+    <Button
+        android:id="@+id/buttonJapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Country Japan" />
+
+    <Button
+        android:id="@+id/buttonUSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Country USA" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:text="Clear current ApyKey and restart to set a new one" />
+
+    <Button
+        android:id="@+id/buttonClearApiKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear ApiKey"
+        android:layout_marginBottom="30dp"/>
+</LinearLayout>

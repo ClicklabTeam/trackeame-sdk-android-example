@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clicklab.exampleapp">
+
+    <application
+        android:name="com.clicklab.exampleapp.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        android:versionCode="1"
+        android:versionName="1">
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.clicklab.exampleapp.MainActivity" />
+
+        <activity
+            android:name="com.clicklab.exampleapp.ConfigurationActivity"
+            android:parentActivityName="com.clicklab.exampleapp.MainActivity" />
+        <activity
+            android:name="com.clicklab.exampleapp.OpenAppActivity"
+            android:parentActivityName="com.clicklab.exampleapp.MainActivity" />
+        <activity
+            android:name="com.clicklab.exampleapp.ConversionActivity"
+            android:parentActivityName="com.clicklab.exampleapp.MainActivity" />
+
+        <activity
+            android:name="com.clicklab.exampleapp.GenericEventActivity"
+            android:parentActivityName="com.clicklab.exampleapp.MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="clicklab"
+                    android:scheme="example" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RestartActivity" />
+
+    </application>
+</manifest>
